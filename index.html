@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Fruit Scoop Poop — Warm Up Game</title>
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <header class="hero">
+    <p class="kicker">Warm Up · High Energy · No Equipment</p>
+    <h1>Fruit <span class="dot">·</span> Scoop <span class="dot">·</span> Poop</h1>
+    <p class="subtitle">
+      Three zones. One caller. The last person to arrive is out.
+    </p>
+    <div class="hero-actions">
+      <button id="callBtn" type="button">📣 Call a command</button>
+      <button id="printBtn" type="button">🖨️ Print poster</button>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ===== Command Caller ===== -->
+    <section class="caller" id="caller" aria-label="Command caller">
+      <div class="caller-screen" id="callerScreen" aria-live="polite">
+        <span class="caller-label">Now calling</span>
+        <span class="caller-text" id="callerText">Ready?</span>
+        <span class="caller-hint" id="callerHint">Hit the button and let it rip.</span>
+      </div>
+      <button class="call-btn" id="callBtnBig" type="button">📣 Call a command</button>
+      <p class="history">Recent calls: <span id="history">—</span></p>
+      <p class="caller-note">
+        Optional — use your own voice if you prefer. Press <kbd>C</kbd> for a quick call.
+      </p>
+    </section>
+
+    <!-- ===== Playing Area ===== -->
+    <section class="field" aria-label="Playing area layout">
+      <h2>The Playing Area</h2>
+      <p class="field-sub">Label three spots in the room before you start.</p>
+
+      <div class="field-grid">
+        <div class="zone zone-fruit">
+          <span class="zone-icon">🍎</span>
+          <span class="zone-name">Fruit</span>
+          <span class="zone-side">One side of the room</span>
+        </div>
+        <div class="zone zone-poop">
+          <span class="zone-icon">💩</span>
+          <span class="zone-name">Poop</span>
+          <span class="zone-side">The center</span>
+        </div>
+        <div class="zone zone-scoop">
+          <span class="zone-icon">🍨</span>
+          <span class="zone-name">Scoop</span>
+          <span class="zone-side">The other side</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== How to Play ===== -->
+    <section class="steps">
+      <h2>How to Play</h2>
+      <ol>
+        <li>Mark the room: <strong>Fruit</strong> on one side, <strong>Scoop</strong> on the other, <strong>Poop</strong> in the center.</li>
+        <li>Everyone starts scattered around the playing area.</li>
+        <li>The caller shouts a location. Players sprint to that spot.</li>
+        <li>The <strong>last one to make it is out</strong>.</li>
+        <li>Drop in the bonus commands below to keep everyone guessing.</li>
+      </ol>
+    </section>
+
+    <!-- ===== Commands ===== -->
+    <section class="commands">
+      <h2>Commands</h2>
+
+      <div class="cmd-grid">
+
+        <article class="cmd cmd-zone">
+          <h3>Fruit</h3>
+          <p>Everyone races to the Fruit side.</p>
+        </article>
+
+        <article class="cmd cmd-zone">
+          <h3>Scoop</h3>
+          <p>Everyone races to the Scoop side.</p>
+        </article>
+
+        <article class="cmd cmd-zone">
+          <h3>Poop</h3>
+          <p>Everyone races to the center.</p>
+        </article>
+
+        <article class="cmd">
+          <h3>Hit the Deck</h3>
+          <p>Everyone drops to the floor. The last one down is out.</p>
+        </article>
+
+        <article class="cmd">
+          <h3>Captain’s Coming</h3>
+          <p>
+            Everyone stands still and salutes — and keeps saluting until
+            <strong>“At Ease”</strong> is called.
+          </p>
+        </article>
+
+        <article class="cmd cmd-lock">
+          <h3>At Ease</h3>
+          <p>
+            Stop saluting. <strong>No other command works until “At Ease” has been called.</strong>
+          </p>
+        </article>
+
+        <article class="cmd">
+          <h3>3 Men Rowing</h3>
+          <p>
+            Get into groups of three, sitting one behind the other, and pretend to row.
+            Anyone left without a trio is out.
+            <em>(The number can be changed at the whim of the host.)</em>
+          </p>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ===== Tips ===== -->
+    <section class="tips">
+      <h2>Tips &amp; Tricks</h2>
+      <ul>
+        <li><strong>Call it loud and fast.</strong> Hesitation kills the energy.</li>
+        <li><strong>Don’t repeat yourself.</strong> Keep the next command a surprise.</li>
+        <li><strong>Save “At Ease.”</strong> It’s your unlock button — nobody can obey anything else until it lands.</li>
+        <li><strong>Mix in “Captain’s Coming” mid-chaos.</strong> Freezing a room that was just sprinting is the whole joke.</li>
+        <li><strong>Adjust the rowing number.</strong> Three is a suggestion, not a law.</li>
+        <li><strong>Keep it short.</strong> This game burns hot — a few rounds is plenty.</li>
+      </ul>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <p>Fruit · Scoop · Poop — run fast, listen harder.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
